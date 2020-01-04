@@ -13,7 +13,7 @@
     <div id="app">
         Sign Up
         <br>
-        <input v-model="email" :class="{red: email.length < 2}">
+        <input v-model="email" :class="[email.length < 2 ? 'red' : 'green']">
         <br>
         <button onclick="alert('signed up')" :disabled="email.length < 2">
 
